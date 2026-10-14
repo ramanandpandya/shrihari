@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shri Hari - Multi-Enterprise Hub • Navsari, Gujarat</title>
+    <meta
+      name="description"
+      content="Official portal for Shri Hari in Navsari. Premier solutions across Travels, Computer Education, Advertising, and Event Management."
+    />
+    <meta property="og:title" content="Shri Hari - Multi-Enterprise Hub" />
+    <meta
+      property="og:description"
+      content="Excellence across four business pillars: Travels, Computer Education, Outdoor Advertising, and Event Management."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Font: Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS (CDN for standalone usage) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Rubik', 'system-ui', 'sans-serif'],
+              heading: ['Rubik', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                orange: '#ff6e00',
+                'orange-light': '#ff8c2b',
+                'orange-dark': '#dc5600',
+                charcoal: '#18181b',
+                black: '#0c0a09',
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- React 18 & ReactDOM UMD -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel Standalone (for JSX execution) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#0c0a09] text-stone-100 font-sans antialiased selection:bg-orange-500 selection:text-black">
+    <div id="root"></div>
+
+    <!-- Application Script -->
+    <script type="text/babel" src="app.js"></script>
+  </body>
+</html>
